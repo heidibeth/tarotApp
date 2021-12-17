@@ -1,0 +1,127 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+#topLinks {
+    float: right;
+}
+
+input[type=search] {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+
+input[type=search]:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+#selector {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#selector:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+#selector:focus {
+    outline: none;
+}
+
+.cardWording {
+    text-align: center;
+}
+
+#headers {
+    padding-top: 40px;
+}
+
+#cardSummary {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+#cardPhoto {
+    text-align: center;
+}
+
+#cardPhoto img {
+    height: 60vh;
+}
+
+#cardPhoto img {
+    transition: 1s;
+  }
+  
+#cardPhoto img:hover {
+    transform: rotate(20deg);
+  }
+
+#description {
+    font-size: small;
+}
+
+/* ----------------------
+Rules for big, centered boi
+----------------------- */
+
+.big #reading {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 7px;
+}
+
+.big #ballImg {
+    height: 100%;
+    width: 100%;
+}
+
+.big #icon {
+    margin: 0 auto;
+    width: 37vw;
+    /* position: absolute; */
+    padding-top: 10vh;
+    left: 29vw 
+}
+
+/* ----------------------
+Rules for smol, cornered boi
+----------------------- */
+
+.small #reading {
+    display: inline-block;
+}
+
+.small .start {
+    float: left;
+}
+
+.small #ballImg {
+    height: 60px;
+    width: 60px;
+}
+
+.small #icon {
+    width: 70px;
+}
+
+.reversed img{
+    transform: rotate(180deg);
+}
+#cardPhoto.reversed img:hover {
+    transform: rotate(160deg);
+  }

@@ -5,26 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pick A Card</title>
+  <link rel="stylesheet" href="./static/css/styles.css">
 </head>
 <body>
-  <div id="ball">
-    <p>tiny picture of a crystal ball<p>
-      <p>Start Your Reading</p>
-    </div>   
-    <div id = "toplinks">
-      <p>Search button maybe</p>
-      <p>dropdown maybe</p>
+
+  <div id = "topLinks">
+      <input type="search" placeholder="Search" results="0" />
+      <select id="selector">
+        <option disabled selected hidden>Select a card</option>
+      </select>
     </div> 
+ 
+    <div class="big" id="ball">
+        <div class="start grow" id="icon"><img src="./static/images/ball.png" alt="crystalBall" id="ballImg"></div>
+        <div class="start grow" id="reading"><p id="readingDisplay">Start Your Reading</p></div>
+    </div>   
+
     <div id= "cards">
-      <div class= "cardwording" id = "headers">
-        <h1 id="cardName">Name of card</h1>
-        <h3 id="meaning">Key Meaning</h3>
+      <div class= "cardWording" id = "headers">
+        <h1 id="cardName"></h1>
+        <div id = "cardPhoto"></div>
+        <h3 id="meaning"></h3>
       </div>
-      <div id = "cardphoto">
-        <img src="images/card.jpg" alt='photo of cards, center on enlarged'/>
-      </div>
-      <div class = "cardwording">
-        <p id = "description">description</p>
+      
+      <div class = "cardWording">
+        <p id = "description"></p>
       </div>
     </div>
     
