@@ -20,8 +20,7 @@ function updateTextContent(elementId, card, cardProp) {
 
 function updateImageContent(card) {
   let cardImage = document.getElementById("cardPhoto");
-  cardImage.innerHTML = `<img src='static/images/${card.name_short}.jpg' alt='photo of ${card.name}, center on enlarged'/>`;
-  console.log(cardImage.innerHTML)
+  cardImage.innerHTML = `<img src='static/images/${card.name_short}.jpg' alt='photo of ${card.name}'/>`;
 }
 
 function showCard(card) {
